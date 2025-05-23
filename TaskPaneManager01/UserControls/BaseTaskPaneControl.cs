@@ -26,7 +26,7 @@ namespace TaskPaneManager01.UserControls
 
         public virtual void OnToggle(bool visible)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

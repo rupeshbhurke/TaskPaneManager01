@@ -182,6 +182,7 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="AppConstants.cs" />
     <Compile Include="TaskPane\DefaultTaskPaneFactory.cs" />
     <Compile Include="TaskPane\IPowerPointContext.cs" />
     <Compile Include="TaskPane\IPowerPointHost.cs" />
@@ -249,6 +250,7 @@
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="readme.md" />
     <None Include="TaskPaneManager01_TemporaryKey.pfx" />
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.cs</DependentUpon>
@@ -258,7 +260,12 @@
     </Compile>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataGridView01\CommonUtilities\CommonUtilities.csproj">
+      <Project>{3b71f368-175a-4522-97ff-40a556515c7e}</Project>
+      <Name>CommonUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
