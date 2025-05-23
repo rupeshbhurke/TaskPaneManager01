@@ -261,7 +261,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DataGridView01\CommonUtilities\CommonUtilities.csproj">
+    <ProjectReference Include="..\CommonUtilities\CommonUtilities.csproj">
       <Project>{3b71f368-175a-4522-97ff-40a556515c7e}</Project>
       <Name>CommonUtilities</Name>
     </ProjectReference>
